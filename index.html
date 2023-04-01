@@ -18,83 +18,111 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
-    <style>
-      .fullScreen {
-        height: 100vh;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-      .background-space{
-        background-color: beige;
-        height: 30px;
-        position: absolute;
-      }
-    </style>
   </head>
-  <body class="container-fluid" style="background: blue">
+  <body class="bg-white">
     <div class="background-space"></div>
-    <div class="container fullScreen" style="background: green">
+    <div class="container fullScreen">
       <header style="padding: 10px">
-        <div class="row">
-          <div class="col-6">
-            <div>Social Media Dashboard</div>
-            <div>Total Followers: 23,004</div>
+        <div class="row pt-3 pb-3">
+          <div class="col-12 col-sm-8">
+            <div class="h1"><b>Social Media Dashboard</b></div>
+            <div class="h6">Total Followers: 23,004</div>
           </div>
-          <div class="col-6">
-            <div>Dark Mode</div>
-            <div></div>
+          <div class="col-12 col-sm-4 d-flex align-self-center">
+            <div class="flex-grow-1 text-sm-end text-start">
+              <strong style="color: var(--Very-Dark-Blue)"> Dark Mode </strong>
+            </div>
+            <div class="form-check form-switch ms-2">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+            </div>
           </div>
         </div>
       </header>
-
       <main role="main">
-        <div class="row SocialBucket">
-          <div class="col-3 SocialSaprateSpace">
-            <div class="cardSocialProfile">
-              <div class="socIconAndName">@nathanf</div>
+        <div class="row SocialBucket g-3">
+          <div class="col-12 col-sm-3 SocialSaprateSpace">
+            <div
+              class="card cardSocialProfile p-2 rounded text-center facebook"
+            >
+              <div class="socIconAndName m-1">
+                <img src="./images/icon-facebook.svg" class="p-1" />
+                @nathanf
+              </div>
               <div class="followerNum">1987</div>
               <div class="followerText">Followers</div>
-              <div class="up-down-followers">12 Today</div>
+              <div class="up-down-followers incress-score m-1">
+                <img src="./images/icon-up.svg" />
+                12 Today
+              </div>
             </div>
           </div>
-          <div class="col-3 SocialSaprateSpace">
-            <div class="cardSocialProfile">
-              <div class="socIconAndName">@nathanf</div>
+          <div class="col-12 col-sm-3 SocialSaprateSpace">
+            <div class="card cardSocialProfile p-2 rounded text-center twitter">
+              <div class="socIconAndName m-1">
+                <img src="./images/icon-twitter.svg" class="p-1" /> @nathanf
+              </div>
               <div class="followerNum">1044</div>
               <div class="followerText">Followers</div>
-              <div class="up-down-followers">99 Today</div>
+              <div class="up-down-followers incress-score m-1">
+                <img src="./images/icon-up.svg" />
+                99 Today
+              </div>
             </div>
           </div>
-          <div class="col-3 SocialSaprateSpace">
-            <div class="cardSocialProfile">
-              <div class="socIconAndName">@realnathanf</div>
-              <div class="followerNum">11k</div>
-              <div class="followerText">Followers</div>
-              <div class="up-down-followers">1099 Today</div>
+          <div class="col-12 col-sm-3 SocialSaprateSpace insta">
+            <div class="card cardSocialProfile rounded text-center insta">
+              <img class="card-img-top upper-div" />
+              <div class="p-2">
+                <div class="socIconAndName m-1">
+                  <img
+                    src="./images/icon-instagram.svg"
+                    class="p-1"
+                    style="padding-right: 10px !important"
+                  />@realnathanf
+                </div>
+                <div class="followerNum">11k</div>
+                <div class="followerText">Followers</div>
+                <div class="up-down-followers incress-score m-1">
+                  <img src="./images/icon-up.svg" />
+                  1099 Today
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-3 SocialSaprateSpace">
-            <div class="cardSocialProfile">
-              <div class="socIconAndName">Nathan F.</div>
+          <div class="col-12 col-sm-3 SocialSaprateSpace">
+            <div class="card cardSocialProfile p-2 rounded text-center youtube">
+              <div class="socIconAndName m-1">
+                <img src="./images/icon-youtube.svg" class="p-1" /> Nathan F.
+              </div>
               <div class="followerNum">8239</div>
               <div class="followerText">Subscribers</div>
-              <div class="up-down-followers">144 Today</div>
+              <div class="up-down-followers decress-score m-1">
+                <img src="./images/icon-down.svg" />
+                <b>144 Today</b>
+              </div>
             </div>
           </div>
         </div>
-        <h2 class="overviewToday">Overview - Today</h2>
-        <div class="row socialProfileFieldBucket">
+
+        <!--h2 class="overviewToday">Overview - Today</!--h2>
+        <div-- class="row socialProfileFieldBucket">
           <div class="col-3 spField">
             <div class="filed-title">
               <div class="col-6 page-reviews">Page Views</div>
@@ -175,7 +203,7 @@
               <div class="col-6 field-groth-in-per">12%</div>
             </div>
           </div>
-        </div>
+        </div-->
       </main>
     </div>
   </body>
