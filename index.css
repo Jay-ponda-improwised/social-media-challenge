@@ -73,6 +73,9 @@ body {
 .decress-score {
   color: var(--Bright-Red);
 }
+.darkerGray{
+  color: var(--Dark-Grayish-Blue);
+}
 
 /* special css */
 .upper-div {
