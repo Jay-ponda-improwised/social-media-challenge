@@ -1,11 +1,12 @@
 :root {
   --Very-Pale-Blue: hsl(225, 100%, 98%);
-  --Light-Grayish-Blue: hsl(227, 47%, 96%);
+  --Light-Grayish-Blue: hsl(229, 100%, 98%);
   --Dark-Grayish-Blue: hsl(228, 12%, 44%);
   --Very-Dark-Blue: hsl(230, 17%, 14%);
   --Lime-Green: hsl(163, 72%, 41%);
   --Bright-Red: hsl(356, 69%, 56%);
   --Toggle: hsl(228, 41%, 86%);
+  --Card-Bg: hsl(227, 47%, 96%);
 
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
@@ -78,7 +79,7 @@ body {
 }
 .card {
   height: 100%;
-  background-color: var(--Light-Grayish-Blue);
+  background-color: var(--Card-Bg);
 }
 .card:hover {
   background-color: var(--Toggle);
