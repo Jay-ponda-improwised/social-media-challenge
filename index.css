@@ -5,6 +5,7 @@
   --Very-Dark-Blue: hsl(230, 17%, 14%);
   --Lime-Green: hsl(163, 72%, 41%);
   --Bright-Red: hsl(356, 69%, 56%);
+  --Toggle: hsl(228, 41%, 86%);
 
   --Facebook: hsl(208, 92%, 53%);
   --Twitter: hsl(203, 89%, 53%);
@@ -36,7 +37,6 @@ body {
   position: absolute;
   z-index: 10;
 }
-
 .common-margin-10 {
   margin: 10px;
 }
@@ -73,8 +73,16 @@ body {
 .decress-score {
   color: var(--Bright-Red);
 }
-.darkerGray{
+.darkerGray {
   color: var(--Dark-Grayish-Blue);
+}
+.card {
+  height: 100%;
+  background-color: var(--Light-Grayish-Blue);
+}
+.card:hover {
+  background-color: var(--Toggle);
+  cursor: pointer;
 }
 
 /* special css */
@@ -89,4 +97,11 @@ body {
   );
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+.field-counts {
+  font-size: 40px;
+  font-weight: 800;
+}
+.page-reviews {
+  font-weight: 600;
 }

@@ -42,7 +42,7 @@
           </div>
           <div class="col-12 col-sm-4 d-flex align-self-center">
             <div class="flex-grow-1 text-sm-end text-start">
-              <strong style="color: var(--Very-Dark-Blue)"> Dark Mode </strong>
+              <strong class="darkerGray"> Dark Mode </strong>
             </div>
             <div class="form-check form-switch ms-2">
               <input
@@ -121,91 +121,154 @@
           </div>
         </div>
 
-        <h2 class="overviewToday mt-5 mb-3 darkerGray">
+        <h2 class="overviewToday mt-3 mb-3 darkerGray">
           <b>Overview - Today</b>
         </h2>
-        <div class="row socialProfileFieldBucket g-3 g-sm-4">
-          <div class="col-3 spField p-2">
-            <div class="card p-2">
-              <div class="filed-title">
-                <div class="col-6 page-reviews">Page Views</div>
-                <div class="col-6 socmed-icon"></div>
-              </div>
 
-              <div class="field-scores">
-                <div class="col-6 field-counts">87</div>
-                <div class="col-6 field-groth-in-per">3%</div>
+        <div class="row socialProfileFieldBucket gx-3 gx-sm-4">
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Page Views</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-facebook.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">87</div>
+                <div
+                  class="col-6 field-groth-in-per text-end incress-score align-self-end"
+                >
+                  <img src="./images/icon-up.svg" class="m-1" />
+                  <b>3%</b>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-3 card spField p-2">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Likes</div>
-              <div class="col-6 socmed-icon"></div>
-            </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">52</div>
-              <div class="col-6 field-groth-in-per">2%</div>
-            </div>
-          </div>
-          <div class="col-3 card spField">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Likes</div>
-              <div class="col-6 socmed-icon"></div>
-            </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">5462</div>
-              <div class="col-6 field-groth-in-per">2257%</div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Likes</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-facebook.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">52</div>
+                <div
+                  class="col-6 field-groth-in-per text-end decress-score align-self-end"
+                >
+                  <img src="./images/icon-down.svg" class="m-1" />
+                  <b>2%</b>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-3 card spField">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Profile Views</div>
-              <div class="col-6 socmed-icon"></div>
-            </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">52k</div>
-              <div class="col-6 field-groth-in-per">1375%</div>
-            </div>
-          </div>
-          <div class="col-3 card spField">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Retweets</div>
-              <div class="col-6 socmed-icon"></div>
-            </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">117</div>
-              <div class="col-6 field-groth-in-per">303%</div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Likes</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-instagram.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">5462</div>
+                <div
+                  class="col-6 field-groth-in-per text-end incress-score align-self-end"
+                >
+                  <img src="./images/icon-up.svg" class="m-1" />
+                  <b>2257%</b>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-3 card spField">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Likes</div>
-              <div class="col-6 socmed-icon"></div>
-            </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">507</div>
-              <div class="col-6 field-groth-in-per">553%</div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">
+                  Profile Views
+                </div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-instagram.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">52k</div>
+                <div
+                  class="col-6 field-groth-in-per text-end incress-score align-self-end"
+                >
+                  <img src="./images/icon-up.svg" class="m-1" />
+                  <b>1375%</b>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-3 card spField">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Likes</div>
-              <div class="col-6 socmed-icon"></div>
-            </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">107</div>
-              <div class="col-6 field-groth-in-per">19%</div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Retweets</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-twitter.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">117</div>
+                <div
+                  class="col-6 field-groth-in-per text-end incress-score align-self-end"
+                >
+                  <img src="./images/icon-up.svg" class="m-1" />
+                  <b>303%</b>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-3 card spField">
-            <div class="filed-title">
-              <div class="col-6 page-reviews">Total Views</div>
-              <div class="col-6 socmed-icon"></div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Likes</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-twitter.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">507</div>
+                <div
+                  class="col-6 field-groth-in-per text-end incress-score align-self-end"
+                >
+                  <img src="./images/icon-up.svg" class="m-1" />
+                  <b>553%</b>
+                </div>
+              </div>
             </div>
-            <div class="field-scores">
-              <div class="col-6 field-counts">1407</div>
-              <div class="col-6 field-groth-in-per">12%</div>
+          </div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Likes</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-youtube.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">107</div>
+                <div
+                  class="col-6 field-groth-in-per text-end decress-score align-self-end"
+                >
+                  <img src="./images/icon-down.svg" class="m-1" />
+                  <b>19%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-3 spField p-2">
+            <div class="card">
+              <div class="row filed-title g-3 p-3">
+                <div class="col-6 page-reviews text-secondary">Total Views</div>
+                <div class="col-6 socmed-icon text-end">
+                  <img src="./images/icon-youtube.svg" alt="facebook" />
+                </div>
+                <div class="col-6 display-5 field-counts">1407</div>
+                <div
+                  class="col-6 field-groth-in-per text-end decress-score align-self-end"
+                >
+                  <img src="./images/icon-down.svg" class="m-1" />
+                  <b>12%</b>
+                </div>
+              </div>
             </div>
           </div>
         </div>
